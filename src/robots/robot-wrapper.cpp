@@ -170,14 +170,14 @@ namespace tsid
                                      const Model::JointIndex index,
                                      Data::Matrix6x & J) const
     {
-      return se3::getJacobian<se3::WORLD>(m_model, data, index, J);
+      return se3::getJointJacobian<se3::WORLD>(m_model, data, index, J);
     }
     
     void RobotWrapper::jacobianLocal(const Data & data,
                                      const Model::JointIndex index,
                                      Data::Matrix6x & J) const
     {
-      return se3::getJacobian<se3::LOCAL>(m_model, data, index, J);
+      return se3::getJointJacobian<se3::LOCAL>(m_model, data, index, J);
     }
     
     SE3 RobotWrapper::framePosition(const Data & data,
@@ -249,7 +249,7 @@ namespace tsid
                                           const Model::FrameIndex index,
                                           Data::Matrix6x & J) const
     {
-      return se3::getJacobian<se3::WORLD>(m_model, data, m_model.frames[index].parent, J);
+      return se3::getJointJacobian<se3::WORLD>(m_model, data, m_model.frames[index].parent, J);
     }
     
     void RobotWrapper::frameJacobianLocal(const Data & data,
