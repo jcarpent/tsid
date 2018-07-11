@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2017 CNRS
+// Copyright (c) 2017-2018 CNRS
 //
 // This file is part of tsid
 // tsid is free software: you can redistribute it
@@ -17,9 +17,6 @@
 
 #include <iostream>
 
-#include <boost/test/unit_test.hpp>
-#include <boost/utility/binary.hpp>
-
 #include <tsid/solvers/solver-HQP-factory.hxx>
 #include <tsid/solvers/solver-HQP-eiquadprog.hpp>
 #include <tsid/solvers/solver-HQP-eiquadprog-rt.hpp>
@@ -29,6 +26,9 @@
 #include <tsid/math/constraint-bound.hpp>
 #include <tsid/utils/stop-watch.hpp>
 #include <tsid/utils/statistics.hpp>
+
+#include <boost/test/unit_test.hpp>
+#include <boost/utility/binary.hpp>
 
 #define CHECK_LESS_THAN(A,B) BOOST_CHECK_MESSAGE(A<B, #A<<": "<<A<<">"<<B)
 #define REQUIRE_FINITE(A) BOOST_REQUIRE_MESSAGE(isFinite(A), #A<<": "<<A)

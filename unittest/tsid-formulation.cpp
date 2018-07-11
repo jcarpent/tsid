@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2017 CNRS
+// Copyright (c) 2017-2018 CNRS
 //
 // This file is part of tsid
 // tsid is free software: you can redistribute it
@@ -17,9 +17,6 @@
 
 #include <iostream>
 
-#include <boost/test/unit_test.hpp>
-#include <boost/utility/binary.hpp>
-
 #include <tsid/contacts/contact-6d.hpp>
 #include <tsid/formulations/inverse-dynamics-formulation-acc-force.hpp>
 #include <tsid/tasks/task-com-equality.hpp>
@@ -34,6 +31,9 @@
 
 #include <pinocchio/algorithm/joint-configuration.hpp> // integrate
 #include <pinocchio/parsers/srdf.hpp>
+
+#include <boost/test/unit_test.hpp>
+#include <boost/utility/binary.hpp>
 
 using namespace tsid;
 using namespace tsid::trajectories;

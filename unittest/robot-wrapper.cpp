@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2017 CNRS
+// Copyright (c) 2017-2018 CNRS
 //
 // This file is part of tsid
 // tsid is free software: you can redistribute it
@@ -17,11 +17,11 @@
 
 #include <iostream>
 
-#include <boost/test/unit_test.hpp>
-#include <boost/utility/binary.hpp>
-
 #include "tsid/robots/robot-wrapper.hpp"
 #include <pinocchio/algorithm/joint-configuration.hpp>
+
+#include <boost/test/unit_test.hpp>
+#include <boost/utility/binary.hpp>
 
 using namespace tsid;
 using namespace tsid::math;

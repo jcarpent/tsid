@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2017 CNRS
+// Copyright (c) 2017-2018 CNRS
 //
 // This file is part of tsid
 // tsid is free software: you can redistribute it
@@ -17,12 +17,12 @@
 
 #include <iostream>
 
-#include <boost/test/unit_test.hpp>
-#include <boost/utility/binary.hpp>
-
 #include <tsid/math/utils.hpp>
 #include <tsid/trajectories/trajectory-se3.hpp>
 #include <tsid/trajectories/trajectory-euclidian.hpp>
+
+#include <boost/test/unit_test.hpp>
+#include <boost/utility/binary.hpp>
 
 BOOST_AUTO_TEST_SUITE ( BOOST_TEST_MODULE )
 
