@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2017 CNRS
+// Copyright (c) 2017-2018 CNRS
 //
 // This file is part of tsid
 // tsid is free software: you can redistribute it
@@ -22,6 +22,7 @@
 #include "tsid/robots/fwd.hpp"
 
 #include <pinocchio/multibody/model.hpp>
+#include <pinocchio/multibody/data.hpp>
 #include <pinocchio/spatial/fwd.hpp>
 
 #include <string>
